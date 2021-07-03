@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Rashid || Rahul</title>
+    <script
+      src="https://kit.fontawesome.com/a106da2ba7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* body {
+  margin: 0;
+  height: 100vh;
+  cursor: none;
+  background: rgb(167, 162, 162);
+}
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+}
+
+.cursor::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 8px solid rgb(26, 27, 26);
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid red;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+} */
+
+      /* THE END */
+
+      @font-face {
+        font-family: Monument-Regular;
+        src: url(fonts/MonumentExtended-Regular.otf);
+      }
+      @font-face {
+        font-family: Monument-bold;
+        src: url(fonts/MonumentExtended-Ultrabold.otf);
+      }
+      :root {
+        --primary: #f9f5ef;
+        --secondary: #161616;
+      }
+
+      body {
+        background-color: #f6f1e4;
+        background-color: var(--primary);
+        color: #161616;
+        color: var(--secondary);
+      }
+
+      h5 {
+        font-family: 'Walkway_Bold', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 1.3px;
+        margin-left: 50px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        text-transform: uppercase;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        overflow-x: hidden;
+      }
+      .navbar {
+        /* transition-timing-function: 1s ease-in; */
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .line {
+        content: '';
+        position: absolute;
+        width: 1142px;
+        height: 1px;
+        background: #161616;
+        left: 94px;
+        margin-bottom: -35px;
+      }
+      nav {
+        flex: 1;
+        text-align: right;
+      }
+      nav ul {
+        display: inline-block;
+        list-style-type: none;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-right: 70px;
+        width: 88px;
+      }
+      nav a {
+        text-decoration: none;
+        font-family: 'Walkway_Bold', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        position: relative;
+        color: black;
+      }
+      .container {
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      nav a:hover {
+        text-decoration: line-through;
+      }
+
+      .banner {
+        margin: 15vh auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70vh;
+        max-height: 100rem;
+      }
+      .banner-upper {
+        margin-top: 15px;
+      }
+
+      .banner h1 {
+        font-family: Monument-bold;
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 0.9;
+        margin-left: -20px;
+      }
+      .banner h3 {
+        font-family: Monument-bold;
+        font-size: 6rem;
+        font-weight: 400;
+        text-align: right;
+        line-height: 0.9;
+      }
+      /* font-family: Monument-Regular; */
+
+      .banner__lower {
+        margin-top: 7rem;
+      }
+
+      .btn {
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 70px;
+      }
+      .arrows {
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 1px solid #161616;
+        border: 1px solid var(--secondary);
+        border-radius: 100%;
+        position: relative;
+        margin-right: 0.5rem;
+      }
+      .btn span {
+        color: var(--secondary);
+        font-family: Monument-bold;
+        font-weight: 400;
+        font-size: 2rem;
+        margin-left: -13px;
+        transition: all 0.3s ease-in-out 0s;
+      }
+      .scroll {
+        left: 49%;
+        padding: 30px;
+        position: absolute;
+        border: 1px solid black;
+        border-radius: 100%;
+        cursor: pointer;
+        margin-top: -68px;
+      }
+      .a1 {
+        margin-top: 26px;
+      }
+      .btn .arrow svg {
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        height: 3rem;
+        width: 3rem;
+        object-fit: contain;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .arrow img {
+        margin-top: 5px;
+        height: 28px;
+      }
+
+      /*  THe end */
+
+      .maxwidth {
+        max-width: 1920px;
+        margin: 0 auto;
+      }
+      .about {
+        background: #f6f1e4;
+        background: var(--primary);
+      }
+
+      .about__main {
+        display: flex;
+        justify-content: center;
+        padding-top: clamp(35rem, 30vh, 35vh);
+      }
+
+      .about .interest {
+        width: 36rem;
+        margin: 0 auto;
+      }
+
+      .about .tech-stack {
+        margin-top: 12rem;
+        margin-bottom: 50rem;
+      }
+
+      .me {
+        height: 100vh;
+        max-height: 120rem;
+        min-height: 38rem;
+        width: 68rem;
+        object-fit: cover;
+        padding-right: 82px;
+      }
+
+      .text__inner .btn {
+        margin-top: 35px;
+        margin-left: 5px;
+      }
+      .about .text h2 {
+        font-size: 10rem;
+        margin-left: -244px;
+        margin-top: -90px;
+      }
+
+      .text h2 {
+        font-family: Monument-bold;
+        mix-blend-mode: exclusion;
+        margin-left: -25rem;
+        margin-bottom: 15rem;
+        color: #f9f5ef;
+      }
+      h2 {
+        font-size: 25rem;
+        font-weight: 400;
+        line-height: 0.8;
+      }
+      .text__inner {
+        width: 45rem;
+        margin-left: 7rem;
+        margin-top: 5rem;
+        position: relative;
+        margin-top: -170px;
+        margin-left: 0px;
+      }
+
+      .about p {
+        font-family: 'Clash Grotesk', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        letter-spacing: 1px;
+      }
+      .tech-stack h3 {
+        font-family: Monument-bold;
+        font-size: 5rem;
+        font-weight: 400;
+        margin-left: 70px;
+      }
+      .tech-stack ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 7rem;
+        margin-left: 30px;
+      }
+      .tech-stack ul li {
+        list-style: none;
+        font-family: 'Walkway_Bold', sans-serif;
+        font-size: 4rem;
+        font-weight: 400;
+      }
+      .fa,
+      .fab,
+      .fad,
+      .fal,
+      .far,
+      .fas {
+        /* -moz-osx-font-smoothing: grayscale; */
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+      }
+      .fab,
+      .far {
+        font-weight: 400;
+      }
+      .fab {
+        font-family: 'Font Awesome 5 Brands';
+      }
+
+      .res {
+        color: var(--secondary);
+        font-family: Monument-bold;
+        font-weight: 400;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-left: -16px;
+      }
+
+      /* the end */
+
+      .project h2 {
+        font-family: Monument-bold;
+        font-size: 11rem;
+      }
+      .project h2 span:last-child {
+        margin-left: 132px;
+      }
+
+      .project .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10rem;
+        -webkit-column-gap: 10rem;
+        column-gap: 10rem;
+        grid-row-gap: 20rem;
+        row-gap: 20rem;
+        justify-content: center;
+        margin-top: 13rem;
+        margin-bottom: 50rem;
+        overflow: hidden;
+      }
+      .project .list__1 {
+        text-align: right;
+        margin-right: -85px;
+      }
+      .project .list__2 {
+        margin-top: 8.5rem;
+      }
+      .project .list__3 {
+        margin-top: -21rem;
+        text-align: right;
+      }
+      .project .list .title {
+        display: flex;
+        align-items: flex-end;
+      }
+      .project .list__1 .title {
+        justify-content: flex-end;
+        margin-bottom: -50px;
+      }
+
+      .project .list .title .index {
+        display: flex;
+      }
+      .project .list .title .index p {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-left: 3rem;
+      }
+      .project .list .title .index p:first-of-type {
+        margin-right: -25px;
+      }
+      .project .list .title .index p:last-of-type {
+        height: 1.8rem;
+        width: 1.8rem;
+        border: 1px solid #161616;
+        border: 1px solid var(--secondary);
+        border-radius: 100%;
+        text-align: center;
+      }
+      /* .project .list .wrapper {
+  margin-top: 5rem;
+  height: 23.9rem;
+  width: 38.8rem;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3);
+  background: #000;
+} */
+      /* .project .list .wrapper canvas { */
+      /* height: 54rem !important;
+/* width: 96rem !important; */
+      two comment */
+  /* border-radius: 5px;
+} */
+/* .project .list .create::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #161616;
+  background: var(--secondary);
+  left: 0;
+  top: -1.1rem;
+} */
+
+/*     SAME     */
+/* .project .list .wrapper-two {
+  margin-top: 2rem;
+  height: 23.9rem;
+  width: 38.8rem;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3);
+  background: #000;
+} */
+/* .project .list .wrapper-two canvas { */
+/* height: 54rem !important;
+width: 96rem !important; */
+/* border-radius: 5px;
+} */
+/* .project .list .wrapper-two::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #161616;
+  background: var(--secondary);
+  left: 0;
+  top: -1.1rem;
+} */
+
+/*   SAME    */
+/* 
+.project .list__4 {
+  margin-top: -12.5rem;
+} */
+
+/*  THREE    */
+/* .project .list .wrapper-three {
+  margin-top: 2rem;
+  height: 23.9rem;
+  width: 38.8rem;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3);
+  background: #000;
+} */
+/* .project .list .wrapper-three .clock:nth-child(2) {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.project .list .wrapper-three canvas {
+  /* height: 54rem !important;
+width: 96rem !important; */
+/* border-radius: 5px;
+} */
+/* .project .list .wrapper-three::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #161616;
+  background: var(--secondary);
+  left: 0;
+  top: -1.1rem;
+}   */
+
+/*   THREE  */
+.title h4 {
+        font-family: Monument-bold;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-right: -30px;
+      }
+      .project .list__3 {
+        margin-top: -52rem;
+        text-align: right;
+        margin-right: -85px;
+      }
+
+      .project .list .title {
+        display: flex;
+        align-items: flex-end;
+      }
+      .project .list__3 .title {
+        justify-content: flex-end;
+      }
+
+      /*    The End  */
+      footer.footer.container.maxwidth {
+        margin-top: -40rem;
+      }
+      .footer h2 {
+        margin-bottom: 15rem;
+        font-size: 9rem;
+        font-family: Monument-bold;
+        margin-left: 5rem;
+      }
+      .footer__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .footer__inner .top {
+        font-family: Monument-bold;
+        font-size: 1.5rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+      }
+      .footer__inner .top svg {
+        margin-left: 1rem;
+        height: 1.3rem;
+        width: 1.3rem;
+        opacity: 0.65;
+      }
+      .footer__inner .social {
+        text-align: right;
+      }
+      .footer__inner .social .email {
+        font-size: 3rem;
+        font-family: 'Walkway_Bold', sans-serif;
+        position: relative;
+      }
+      .footer__inner .social .email::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2.5rem;
+        width: 100%;
+        height: 1px;
+        background: #161616;
+        background: var(--secondary);
+      }
+      .footer__inner .social__icons {
+        margin-top: 3.2rem;
+      }
+      .footer__inner .social__icons a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        background: #161616;
+        background: var(--secondary);
+        transition: all 0.2s linear;
+      }
+      .footer__inner .social__icons a {
+        font-family: 'Walkway_Bold', sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-left: 3rem;
+        position: relative;
+      }
+      .footer__inner .top svg path {
+        fill: #161616;
+        fill: var(--secondary);
+      }
+      a {
+        text-decoration: none;
+        color: #161616;
+        color: var(--secondary);
+      }
+      .project img {
+        height: 23.9rem;
+        width: 39rem;
+      }
+
+      .footer p {
+        text-transform: uppercase;
+        font-weight: 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-family: Monument-bold;
+        margin: 8rem 0 2rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .create {
+        margin-top: 5rem;
+        height: 23.9rem;
+        width: 38.8rem;
+        position: relative;
+      }
+      .create-two {
+        margin-top: 1rem;
+        height: 23.9rem;
+        width: 38.8rem;
+        position: relative;
+      }
+      .create-three {
+        margin-top: 5rem;
+        height: 23.9rem;
+        width: 38.8rem;
+        position: relative;
+      }
+      .create-four {
+        margin-top: 5rem;
+        height: 23.9rem;
+        width: 38.8rem;
+        position: relative;
+      }
+      .man {
+        margin-bottom: 33rem;
+      }
+
+      .man-two {
+        margin-bottom: 33rem;
+      }
+      .create-three {
+        margin-bottom: 33rem;
+      }
+      .create-four {
+        margin-bottom: 33rem;
+      }
+      .projectnew {
+        max-width: 1920px;
+      }
+
+      .create canvas {
+        margin-top: 5rem;
+        height: 23.9rem !important;
+        width: 39rem !important;
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3),
+          0 30px 60px -30px rgba(0, 0, 0, 0.3);
+        background: #000;
+      }
+      .create-two canvas {
+        height: 23.9rem !important;
+        width: 39rem !important;
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3),
+          0 30px 60px -30px rgba(0, 0, 0, 0.3);
+        background: #000;
+      }
+      .create-three canvas {
+        height: 23.9rem !important;
+        width: 39rem !important;
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3),
+          0 30px 60px -30px rgba(0, 0, 0, 0.3);
+        background: #000;
+      }
+      .create-four canvas {
+        height: 23.9rem !important;
+        width: 39rem !important;
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3),
+          0 30px 60px -30px rgba(0, 0, 0, 0.3);
+        background: #000;
+      }
+      /* three */
+
+      .man-three {
+        margin-top: -4rem;
+      }
+      .list__4 {
+        margin-top: -46rem;
+      }
+      .man-four {
+        margin-top: -4rem;
+      }
+      .title h4 {
+        font-family: Monument-bold;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+      }
+
+      /*   new arrow  */
+      .dirk {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-left: 2px;
+      }
+      .more {
+        font-size: 1.8rem;
+      }
+      .arrow-wrapper {
+        font-family: Monument-bold;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+
+      /***************
+ * Arrow 1
+ ***************/
+      #arrow_1 .arrow {
+        cursor: pointer;
+        display: block;
+        width: 36.21641px;
+        height: 37.43281px;
+        position: relative;
+        margin-left: 6rem;
+        border: 2px solid black;
+        border-radius: 50%;
+      }
+
+      #arrow_1 .arrow span,
+      #arrow_1 .arrow:before,
+      #arrow_1 .arrow:after {
+        background: #00bcd4;
+        content: '';
+        display: block;
+        width: 15px;
+        height: 2px;
+        position: absolute;
+        top: calc(50% - (2px / 2));
+        margin-right: 14px;
+      }
+      #arrow_1 .arrow:before {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      #arrow_1 .arrow:after {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      #arrow_1 .arrow span {
+        width: 0;
+      }
+
+      #arrow_1 .arrow:hover span {
+        width: 20px;
+      }
+
+      #arrow_1 .arrow.arrow--left span,
+      #arrow_1 .arrow.arrow--left:before,
+      #arrow_1 .arrow.arrow--left:after {
+        left: 0;
+        -webkit-transform-origin: left 50%;
+        transform-origin: left 50%;
+      }
+
+      #arrow_1 .arrow.arrow--left:before,
+      #arrow_1 .arrow.arrow--left:after {
+        -webkit-transition: left 0.3s 0.05s;
+        transition: left 0.3s 0.05s;
+      }
+
+      #arrow_1 .arrow.arrow--left span {
+        -webkit-transition: width 0.3s, left 0.3s 0.05s;
+        transition: width 0.3s, left 0.3s 0.05s;
+      }
+
+      #arrow_1 .arrow.arrow--left:hover span,
+      #arrow_1 .arrow.arrow--left:hover:before,
+      #arrow_1 .arrow.arrow--left:hover:after {
+        left: -21.21641px;
+      }
+
+      #arrow_1 .arrow.arrow--right span,
+      #arrow_1 .arrow.arrow--right:before,
+      #arrow_1 .arrow.arrow--right:after {
+        right: 0;
+        -webkit-transform-origin: right 50%;
+        transform-origin: right 50%;
+      }
+
+      #arrow_1 .arrow.arrow--right:before,
+      #arrow_1 .arrow.arrow--right:after {
+        -webkit-transition: right 0.3s 0.05s;
+        transition: right 0.3s 0.05s;
+      }
+
+      #arrow_1 .arrow.arrow--right span {
+        -webkit-transition: width 0.3s, right 0.3s 0.05s;
+        transition: width 0.3s, right 0.3s 0.05s;
+      }
+
+      #arrow_1 .arrow.arrow--right:hover span,
+      #arrow_1 .arrow.arrow--right:hover:before,
+      #arrow_1 .arrow.arrow--right:hover:after {
+        right: -5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="cursor"></div> -->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <h5>learndailyteam</h5>
+
+          <nav style="opacity: 1; transform: none">
+            <ul>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">PRODUCTS</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="line"></div>
+        </div>
+
+        <div class="banner">
+          <div class="banner-upper">
+            <h1 style="opacity: 1; transform: none">
+              <span>Rashid M.</span>
+            </h1>
+            <h3 style="opacity: 0.65; transform: none">ReactJS Developer</h3>
+          </div>
+          <div class="banner__lower" style="opacity: 1; transform: none">
+            <a href="#">
+              <div id="arrow_1" class="arrow-wrapper">
+                <div class="arrow arrow--right">
+                  <span></span>
+                </div>
+                <div class="dirk">Light</div>
+              </div>
+            </a>
+            <img
+              class="scroll"
+              src="https://img.icons8.com/ios-glyphs/30/000000/long-arrow-down.png"
+            />
+          </div>
+        </div>
+      </div>
+      <section class="about maxwidth">
+        <div id="about" class="about__main">
+          <img
+            class="me"
+            style="transform: translateY(-215.475px) translateZ(0px)"
+            src="images/rashid.jpg"
+            alt="rashid"
+          />
+          <div class="text">
+            <h2>
+              about <br />
+              me
+            </h2>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              style="opacity: 1; transform: none"
+              class="text__inner"
+            >
+              <p>
+                I am a Front-End and ReactJS Developer. My interest in web
+                development started back in 2017 when I decided to try making my
+                own websites using Wix and Wordpress — turns out making a
+                website from scratch taught me a lot about HTML & CSS!
+              </p>
+              <a href="#">
+                <div id="arrow_1" class="arrow-wrapper">
+                  <div class="arrow arrow--right">
+                    <span></span>
+                  </div>
+                  <div class="more">Resume</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="interest" style="opacity: 1; transform: none">
+          My interests?
+          <br />
+          I am a fan of reading. I am especially in love with the Harry Potter
+          series. I am also really good at playing Chess.
+        </p>
+        <div
+          data-aos="fade-right"
+          class="tech-stack container"
+          style="opacity: 1; transform: translateY(72px) translateZ(0px)"
+        >
+          <h3>tech - stack</h3>
+          <ul>
+            <li>
+              <i class="fab fa-html5"></i>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li>
+              <i class="fab fa-bootstrap"></i>
+            </li>
+            <li>
+              <i class="fab fa-js-square"></i>
+            </li>
+            <li>
+              <i class="fab fa-react"></i>
+            </li>
+            <li>
+              <i class="fab fa-node-js"></i>
+            </li>
+            <li>
+              <i class="fab fa-python"></i>
+            </li>
+            <li>
+              <i class="fab fa-git"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- the project list -->
+
+      <!-- <div class="man">
+        <div class="create">
+          <a href="#">
+            <img src="" alt="" />
+          </a>
+        </div>
+      </div> -->
+
+      <section data-aos="fade-up" class="project maxwidth">
+        <h2 id="project">
+          <span style="transform: translateX(194.543px) translateZ(0px)"
+            >selected</span
+          >
+          <span style="transform: translateX(-194.543px) translateZ(0px)"
+            >projects</span
+          >
+        </h2>
+        <div class="list" style="opacity: 1; transform: none">
+          <div class="list__1">
+            <div class="title">
+              <h4>Emojipedia</h4>
+              <div class="index">
+                <p>2021</p>
+                <p>1</p>
+              </div>
+            </div>
+            <a
+              href="https://code2rithik.github.io/clock/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="man">
+                <div class="create">
+                  <a href="#"> </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="list__2">
+            <div class="title">
+              <h4>traveling site</h4>
+              <div class="index">
+                <p>2021</p>
+                <p>2</p>
+              </div>
+            </div>
+            <a
+              href="https://code2rithik.github.io/clock/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="man-two">
+                <div class="create-two"></div>
+              </div>
+            </a>
+          </div>
+          <div class="list__3">
+            <div class="title">
+              <h4>todolist</h4>
+              <div class="index">
+                <p>2021</p>
+                <p>3</p>
+              </div>
+            </div>
+            <a
+              href="https://code2rithik.github.io/clock/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="man-three">
+                <div class="create-three"></div>
+              </div>
+            </a>
+          </div>
+          <div class="list__4">
+            <div class="title">
+              <h4>Emoji search</h4>
+              <div class="index">
+                <p>2021</p>
+                <p>4</p>
+              </div>
+            </div>
+            <a
+              href="https://rahulfordev.github.io/Materialize_website/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="man-four">
+                <div class="create-four"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- the project list -->
+
+      <footer class="footer container maxwidth">
+        <h2 id="contact">Get in touch</h2>
+        <div class="footer__inner">
+          <a class="top" href=""
+            >BACK TO TOP<svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.5933 14.9812L29.3393 25.217C30.2202 25.9245 30.2202 27.0685 29.3393 27.7684L27.2212 29.4694C26.3402 30.1769 24.9157 30.1769 24.044 29.4694L15.0094 22.214L5.9747 29.4694C5.09372 30.1769 3.66917 30.1769 2.79756 29.4694L0.660731 27.776C-0.220244 27.0685 -0.220244 25.9245 0.660731 25.2245L13.4067 14.9887C14.2877 14.2737 15.7123 14.2737 16.5933 14.9812ZM13.4067 0.530607L0.66073 10.7664C-0.220245 11.4739 -0.220244 12.6179 0.66073 13.3179L2.77882 15.0188C3.65979 15.7263 5.08435 15.7263 5.95595 15.0188L14.9906 7.76342L24.0253 15.0188C24.9063 15.7263 26.3308 15.7263 27.2024 15.0188L29.3205 13.3179C30.2015 12.6104 30.2015 11.4664 29.3205 10.7664L16.5745 0.530606C15.7123 -0.176871 14.2877 -0.176871 13.4067 0.530607Z"
+                fill="#fff"
+              ></path>
+            </svg>
+          </a>
+          <div class="social">
+            <a class="email" href="">rahulfordev@gmail.com</a>
+            <div class="social__icons">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <p>© learndailyteam 2021</p>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="hover-effect.umd.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
